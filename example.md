@@ -1,20 +1,18 @@
 ---
 theme: ./
 colorSchema: auto
-author: Mu-Tsun Tsai
-date: 2023/01/01
+author: Myeongseok (Edgar) Gwon
+date: 2026/03/03
 transition: slide-left
 ---
 
-# Slidev Theme Frankfurt
+# Example Presentation
 
-Presentation slides for developers
+## A. B. Arthur, J. Doe
 
-<div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+### Very Famous University
+
+## Very Large Conference, April 2026
 
 ---
 section: Introduction
@@ -54,9 +52,6 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
-layout: image-right
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
----
 
 # Code
 
@@ -78,7 +73,7 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ---
-section: Frankfurt
+section: UMN
 src: section.md
 ---
 

@@ -1,9 +1,9 @@
-# slidev-theme-frankfurt
+# slidev-theme-umn
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-frankfurt?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-frankfurt)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-umn?color=7a0019&label=)](https://www.npmjs.com/package/slidev-theme-umn)
 
 A theme for [Slidev](https://github.com/slidevjs/slidev),
-inspired by the Frankfurt theme in [Beamer](https://github.com/josephwright/beamer),
+inspired by University of Minnesota branding (maroon and gold),
 well-suited for academic talks.
 
 ![](screenshots/01.png)
@@ -15,7 +15,7 @@ Start Slidev and then it will prompt you to install the theme automatically.
 
 ```yaml
 ---
-theme: frankfurt
+theme: umn
 infoLine: true # on by default, can be turned off
 author: 'Your name here' # shows in infoLine
 title: 'Title' # shows in infoLine
@@ -24,18 +24,6 @@ date: '2023/01/01' # shows in infoLine, defaults to the current date
 ```
 
 Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
-
-## Using sections
-
-The main feature of Frankfurt theme is the section and progress indicators on top.
-To divide your slides into sections,
-add the following frontmatter to the first page of each section:
-
-```yaml
----
-section: 'Section title'
----
-```
 
 ## Components
 
@@ -51,8 +39,9 @@ This theme provides the following component:
 
 ## Contributing
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+- `npm install` (or `pnpm install`)
+- Run `slidev your-slides.md` to start theme preview (or `pnpm dev -- your-slides.md`)
+- Edit your slides and styles to see the changes
+- `slidev build your-slides.md` to build
+- `slidev export your-slides.md` to generate the PDF
+- `slidev export your-slides.md --per-slide --format png --output screenshots` for PNGs

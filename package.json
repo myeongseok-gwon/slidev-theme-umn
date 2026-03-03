@@ -1,13 +1,13 @@
 {
-	"name": "slidev-theme-frankfurt",
-	"version": "1.0.8",
+	"name": "slidev-theme-umn",
+	"version": "1.0.0",
 	"type": "module",
-	"description": "A theme for Slidev, inspired by the Frankfurt theme in Beamer.",
+	"description": "A theme for Slidev, inspired by University of Minnesota branding.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MuTsunTsai/slidev-theme-frankfurt.git"
+		"url": "git+https://github.com/myeongseok-gwon/slidev-theme-umn.git"
 	},
-	"author": "Mu-Tsun Tsai",
+	"author": "Myeongseok (Edgar) Gwon",
 	"license": "MIT",
 	"keywords": [
 		"slidev-theme",
@@ -18,10 +18,10 @@
 		"slidev": ">=0.19.3"
 	},
 	"scripts": {
-		"build": "slidev build example.md",
-		"dev": "slidev example.md",
-		"export": "slidev export example.md",
-		"screenshot": "slidev export example.md --per-slide --format png --output screenshots"
+		"dev": "slidev",
+		"build": "slidev build",
+		"export": "slidev export",
+		"screenshot": "slidev export --per-slide --format png --output screenshots"
 	},
 	"dependencies": {
 		"@slidev/types": "^52.1.0",

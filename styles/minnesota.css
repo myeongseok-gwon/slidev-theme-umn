@@ -7,28 +7,28 @@ html {
 
 	overflow: hidden;
 
-	html.dark & {
-		background: #222;
-	}
-
 	h1 {
 		@apply text-white shadow-md;
-		background: #3333B3;
+		/* Main maroon */
+		background: #7a0019;
 		margin-top: -4rem;
 		margin-bottom: 2rem;
 		margin-left: -5.5rem;
 		margin-right: -5.5rem;
-		padding: 5.5rem 3rem 1rem 3rem;
+		padding: 3rem 3rem 1rem 3rem;
 		width: 1000%;
 		--un-shadow-opacity: 1;
-		--un-shadow-color: #3333B3;
+		/* Dark maroon as shadow */
+		--un-shadow-color: #5b0013;
 	}
 
 	&.center,
 	&.cover,
 	&.intro {
 		h1 {
-			@apply shadow-md shadow-gray;
+			/* no shadow for center/cover/intro titles */
+			box-shadow: none;
+			--un-shadow-opacity: 0;
 
 			display: inline-block;
 			padding: 1rem 5rem;
@@ -37,11 +37,6 @@ html {
 			margin-top: unset;
 			margin-left: unset;
 			margin-right: unset;
-
-			html.dark & {
-				--un-shadow-opacity: 1;
-				--un-shadow-color: #3333B3;
-			}
 		}
 	}
 }
@@ -53,21 +48,28 @@ html {
 	overflow: hidden;
 
 	html.dark & {
-		--un-shadow-color: #111;
+		/* darkest grey */
+		--un-shadow-color: #333333;
 	}
 
 	header {
 		padding: 0.5rem;
-		color: white;
-		background: #262686;
+		color: #333333;
+		/* Gold gradient header using dark/light gold */
+		background: linear-gradient(135deg, #ffb71e, #ffcc33, #ffde7a);
+		font-weight: 600;
 	}
 
 	main {
 		padding: 0.5rem;
-		background: #E9E9F3;
+		/* light grey background */
+		background: #d5d6d2;
+		color: #333333;
 
 		html.dark & {
-			background: #444;
+			/* mid greys for dark mode */
+			background: #5a5a5a;
+			color: #fdfdfd;
 		}
 	}
 }

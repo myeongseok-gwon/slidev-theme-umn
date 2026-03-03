@@ -1,5 +1,5 @@
 
-# Frankfurt theme
+# UMN theme
 
 <Item title="Definition 1">This is definition 1.</Item>
 

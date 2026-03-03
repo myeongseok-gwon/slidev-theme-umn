@@ -1,7 +1,7 @@
 :root {
-	/* default theme color */
+	/* default theme color - UMN maroon */
 	/* can be overrided by uses `themeConfig` option */
-	--slidev-theme-primary: #3333B3;
+	--slidev-theme-primary: #7a0019;
 }
 
 .slidev-layout.cover,
